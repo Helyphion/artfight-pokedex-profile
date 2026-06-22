@@ -1,8 +1,23 @@
+<!-- 
+POKÉDEX CHARACTER PROFILE TEMPLATE
+(based on Pokémon White/Black)
+
+created by @helyphion
+-->
+
+<!-- PLACEHOLDERS
+_SPRITE_ // image url
+_ID_ // pokédex number
+_NAME_ // species name
+_TITLE_ // species category (e.g. "Mouse Pokémon")
+_FOOTPRINT_ // https://fontawesome.com/search
+-->
+
 <div class="row" style="background-image:url(https://i.postimg.cc/9Q6jn5qt/ds-pokedex-notypes.png); height:432px; width:656px; font-family:courier; color:#595151; font-size:2rem; letter-spacing:-3px; border:2px #ebebeb ridge; margin:auto">
    
     <!-- sprite/image -->
     <div class="col-5">
-        <img style="height:180px; min-width:180px; margin-top:24px; margin-left: 20px" src="https://i.postimg.cc/nLQ602zB/felight.png">
+        <img style="height:180px; min-width:180px; margin-top:24px; margin-left: 20px" src="_SPRITE_">
     </div>
     
     <!-- right info box -->
@@ -10,54 +25,52 @@
         
         <div style="margin-left:57px; margin-top:31px">
             <!-- (regional) pokédex number -->
-            <span style="margin-right:25px">303</span>
+            <span style="margin-right:25px">_ID_</span>
             <!-- name -->
-            <span>Felight</span>
+            <span>_NAME_</span>
         </div>
         
         <!-- pokémon title -->
-        <div style="margin:-5px 5px 0 39px; text-align:center; font-size:1.9rem">Sun Cat Pokémon</div>
+        <div style="margin:-5px 5px 0 39px; text-align:center; font-size:1.9rem">_TITLE_ Pokémon</div>
    
         <div class="row no-gutters" style="margin-left:2px">
             <!-- footprint -->
             <div class="col-3" style="margin-top:23px; color:black">
-                <i class="fa-solid fa-paw"></i>
+                <i class="fa-solid _FOOTPRINT_"></i>
             </div>
+            
+            <!---- TYPE PLACEHOLDERS ----
+            _TYPE1BG_          _TYPE2BG_
+            _TYPE1BORDER_      _TYPE2BORDER_
+            _TYPE1NAME_        _TYPE2NAME_
+            -->
             
             <!-- primary type -->
             <div class="col-4" style="margin-top:20px; margin-left:10px">
                 <div style="width:82px; height:30px; line-height:30px; font-size:1.4rem; letter-spacing:-2px; color:#fbfbfb;
-                background-color:#fbc330; border:solid #715118;
+                background-color:#_TYPE1BG_; border:solid #_TYPE1BORDER_;
                 border-width:2px 3px; text-align:center">
-                ELECTR</div>
+                _TYPE1NAME_</div>
             </div>
             <!-- secondary type (optional) -->
             <div class="col-4" style="margin-top:20px; margin-left:-13px">
                 <div style="width:82px; height:30px; line-height:30px; font-size:1.4rem; letter-spacing:-2px; color:#fbfbfb;
-                background-color:#9aaaf3; border:solid #415192;
+                background-color:#_TYPE2BG_; border:solid #_TYPE2BORDER_;
                 border-width:2px 3px; text-align:center">
-                FLYING</div>
+                _TYPE2NAME_</div>
             </div>
+            <!-- for Pokémon with only one type, just delete everything between the "secondary type" comment and this comment -->
             
-        <!--        bg-color  border
-            NORMAL: #aaa292 / #515151
-            FIGHT: #a25138 / #493830
-            FLYING: #9aaaf3 / #415192
-            POISON: #b259a2 / #493851
-            GROUND: #d3b259 / #715118
-            ROCK: #baa259 / #715118
-            BUG: #aaba20 / #416938
-            GHOST: #6161b2 / #493851
-            STEEL: #aaaac3 / #515151
-            FIRE: #f35130 / #712008
-            WATER: #389afb / #415192
-            GRASS: #79cb51 / #416938
-            ELECTR: #fbc330 / #715118
-            PSYCHC: #fb71a2 / #693838
-            ICE: #59cbe3 / #415192
-            DRAGON: ##7b63e7 / #4a3994
-            DARK: #715949 / #493830
-            ( FAIRY: #ffaaff / #e86ad9 )
+        <!-- TYPE   BG-COLOR  BORDER
+            NORMAL: #aaa292 / #515151     FIRE:   #f35130 / #712008
+            FIGHT:  #a25138 / #493830     WATER:  #389afb / #415192
+            FLYING: #9aaaf3 / #415192     GRASS:  #79cb51 / #416938
+            POISON: #b259a2 / #493851     ELECTR: #fbc330 / #715118
+            GROUND: #d3b259 / #715118     PSYCHC: #fb71a2 / #693838
+            ROCK:   #baa259 / #715118     ICE:    #59cbe3 / #415192
+            BUG:    #aaba20 / #416938     DRAGON: #7b63e7 / #4a3994
+            GHOST:  #6161b2 / #493851     DARK:   #715949 / #493830
+            STEEL:  #aaaac3 / #515151   ( FAIRY:  #ffaaff / #e86ad9 )
         -->
         </div>
 

@@ -1,17 +1,23 @@
-<!-- 
+<!-- created by @helyphion
 POKÉDEX CHARACTER PROFILE TEMPLATE
-(based on Pokémon White/Black)
+(based on Pokémon White/Black) 
 
-created by @helyphion
--->
+WARNING: Pressing "submit" on Art Fight will clear all comments/instructions!
+I recommend using https://af.circlejourney.net for editing before putting it on AF. -->
 
-<!-- PLACEHOLDERS
+
+<!-- PLACEHOLDERS:
 _SPRITE_ // image url
 _ID_ // pokédex number
 _NAME_ // species name
 _TITLE_ // species category (e.g. "Mouse Pokémon")
-_FOOTPRINT_ // https://fontawesome.com/search
--->
+_FOOTPRINT_ // https://fontawesome.com/search (e.g. "fa-paw")
+_HEIGHT_ // 00.0m or 00'00"
+_WEIGHT_ // 00.0kg or 00.0lbs.
+_DESC_ // 2-ish sentences of species description
+
++ TYPE_PLACEHOLDERS section below! -->
+
 
 <div class="row" style="background-image:url(https://i.postimg.cc/9Q6jn5qt/ds-pokedex-notypes.png); height:432px; width:656px; font-family:courier; color:#595151; font-size:2rem; letter-spacing:-3px; border:2px #ebebeb ridge; margin:auto">
    
@@ -39,29 +45,8 @@ _FOOTPRINT_ // https://fontawesome.com/search
                 <i class="fa-solid _FOOTPRINT_"></i>
             </div>
             
-            <!---- TYPE PLACEHOLDERS ----
-            _TYPE1BG_          _TYPE2BG_
-            _TYPE1BORDER_      _TYPE2BORDER_
-            _TYPE1NAME_        _TYPE2NAME_
-            -->
-            
-            <!-- primary type -->
-            <div class="col-4" style="margin-top:20px; margin-left:10px">
-                <div style="width:82px; height:30px; line-height:30px; font-size:1.4rem; letter-spacing:-2px; color:#fbfbfb;
-                background-color:#_TYPE1BG_; border:solid #_TYPE1BORDER_;
-                border-width:2px 3px; text-align:center">
-                _TYPE1NAME_</div>
-            </div>
-            <!-- secondary type (optional) -->
-            <div class="col-4" style="margin-top:20px; margin-left:-13px">
-                <div style="width:82px; height:30px; line-height:30px; font-size:1.4rem; letter-spacing:-2px; color:#fbfbfb;
-                background-color:#_TYPE2BG_; border:solid #_TYPE2BORDER_;
-                border-width:2px 3px; text-align:center">
-                _TYPE2NAME_</div>
-            </div>
-            <!-- for Pokémon with only one type, just delete everything between the "secondary type" comment and this comment -->
-            
-        <!-- TYPE   BG-COLOR  BORDER
+            <!-- CANON TYPE COLOUR CODES REFERENCE:
+                    BG-COLOR  BORDER              BG-COLOR  BORDER
             NORMAL: #aaa292 / #515151     FIRE:   #f35130 / #712008
             FIGHT:  #a25138 / #493830     WATER:  #389afb / #415192
             FLYING: #9aaaf3 / #415192     GRASS:  #79cb51 / #416938
@@ -71,20 +56,42 @@ _FOOTPRINT_ // https://fontawesome.com/search
             BUG:    #aaba20 / #416938     DRAGON: #7b63e7 / #4a3994
             GHOST:  #6161b2 / #493851     DARK:   #715949 / #493830
             STEEL:  #aaaac3 / #515151   ( FAIRY:  #ffaaff / #e86ad9 )
-        -->
+            -->
+            
+            <!-- TYPE_PLACEHOLDERS:
+            _TYPE1NAME_        _TYPE2NAME_
+            _TYPE1COLOR_       _TYPE2COLOR_
+            _TYPE1BORDER_      _TYPE2BORDER_ 
+            -->
+            
+            <!-- primary type -->
+            <div class="col-4" style="margin-top:20px; margin-left:10px">
+                <div style="width:82px; height:30px; line-height:30px; font-size:1.4rem; letter-spacing:-2px; color:#fbfbfb;
+                background-color:#_TYPE1COLOR_; border:solid #_TYPE1BORDER_;
+                border-width:2px 3px; text-align:center">
+                _TYPE1NAME_</div>
+            </div>
+            <!-- secondary type (optional) -->
+            <div class="col-4" style="margin-top:20px; margin-left:-13px">
+                <div style="width:82px; height:30px; line-height:30px; font-size:1.4rem; letter-spacing:-2px; color:#fbfbfb;
+                background-color:#_TYPE2COLOR_; border:solid #_TYPE2BORDER_;
+                border-width:2px 3px; text-align:center">
+                _TYPE2NAME_</div>
+            </div>
+            <!-- for single-type Pokémon, just delete everything between the "secondary type" comment and this comment -->
         </div>
 
         <!-- height / weight -->
         <div style="text-align:right; margin-right:22px; line-height:43px; font-size:1.9rem">
-            <div>121cm</div>
-            <div>4.3kg</div>
+            <div>_HEIGHT_</div>
+            <div>_WEIGHT_</div>
         </div>
     
     </div>
     
     <!-- bottom info text -->
     <div style="margin:10px 30px 0 40px; height:100px; overflow:hidden; line-height:34px; font-size:1.7rem; color:#fbfbfb">
-        It charges up power by taking extensive naps in the sun. The more power it has stored up, the brighter it glows.
+        _DESC_
     </div>
     
 </diV>
